@@ -27,7 +27,6 @@ client.connect();
 client.on('chat', function(channel, user, message, self) {
           if(message.indexOf(emote) + 1) {
               while (message.indexOf(emote) + 1){
-              //message = message.slice(13);
               message = message.replace(emote,'')
               i++;
               }
